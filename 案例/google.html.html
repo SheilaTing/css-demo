@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://js.jirengu.com
+
+Copyright (c) 2020 by SheilaTing (http://js.jirengu.com/yaler/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1509788_honi9n2nqp9.css">
+<style id="jsbin-css">
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 275px;
+  height: 100px;
+  margin: 100px auto 0 auto;
+  background: url(https://i.loli.net/2019/11/14/LVkXcBibEjh9s6v.png) center center no-repeat;
+  background-size: contain;
+}
+
+.search {
+  position: relative;
+  max-width: 582px;
+  height: 40px;
+  margin: 20px auto;
+  box-shadow: 0 0 0 1px #ccc;
+  border-radius: 24px;
+  border:2px solid;
+}
+
+.search > .icon-search {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  /*下面的写法实现垂直居中更好*/
+  /*
+  top: 50%;
+  transform: translateY(-50%);
+  */
+  
+  color: #999;
+  font-size: 16px;
+}
+
+.search > input {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 24px;
+  padding: 0 40px;
+}
+
+.search > .icon-mic {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  color: #5484ed;
+  font-size: 18px;
+}
+
+.search:hover {
+  box-shadow: 0 0 4px 0px #ccc;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons > span {
+  display: inline-block;
+  background: #eee;
+  font-size: 13px;
+  color: #666;
+  padding: 6px 12px;
+  margin: 16px 4px;
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+  <div class="logo"></div>
+  <div class="search">
+    <span class="iconfont icon-search"></span>
+    <input type="search" placeholder="请输入内容">
+    <span class="iconfont icon-mic"></span>
+  </div>
+  <div class="buttons">
+    <span>Google搜索</span>
+    <span>手气不错</span>
+  </div>
+ 
+</body>
+</html>
