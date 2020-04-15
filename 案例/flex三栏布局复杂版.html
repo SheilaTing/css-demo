@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://js.jirengu.com
+
+Copyright (c) 2020 by SheilaTing (http://js.jirengu.com/qecuv/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="使用flex布局实现经典三栏布局" />
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+.wrapper {
+  display:flex;
+  flex-wrap:wrap;
+}
+.wrapper > * {
+  width:100%;
+}
+.header {
+  background:pink;
+  padding:10px;
+}
+.footer {
+  background:grey;
+  padding:10px;
+  order:4;
+}
+
+.wrapper aside {
+  background:blue;
+  width:100px;
+}
+
+.aside1 {
+  order:1;
+}
+
+.aside2 {
+  order:3;
+}
+
+.main {
+  background:yellow;
+  flex:1;
+  height:100px;
+  order:2
+}
+
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">header</header>
+    <main class="main">main</main>
+    <aside class="aside1">aside1</aside>
+    <aside class="aside2">aside2</aside>
+    <footer class="footer">footer</footer>
+  </div>
+</body>
+</html>
